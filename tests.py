@@ -64,7 +64,7 @@ class WebTestCase(unittest.TestCase):
         response = self.get_response(path)
         self.assertEqual(200, response.getcode())
 
-        self.assertIn(str(a*b).encode(), response.read())
+        self.assertIn(str(a * b).encode(), response.read())
 
     def test_subtract_positive_result(self):
         """
